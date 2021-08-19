@@ -43,3 +43,17 @@ void loop(){
 ``` 
 
 __NOTE__ : It is important for commands to include `\n`. Without that, it's not working. 
+
+## Important notes 
+
+The python script has been written and tested with Python 3.8, and it was fine. For older or newer versions there must be no problems either. Also you need to install `pyserial` library in order to get this thing to the work. Otherwise it won't be functioning. 
+
+In this line:
+
+```python
+target = serial.Serial('/dev/cu.usbmodem142101', 9600)
+```
+
+The `/dev/cu.usbemodemXXXXXX` is refering to the _serial port_ I used. This format for external serial connections is used on _Darwin_ operating system (the heart of Apple's macOS). If you have windows, it'll look like `COMX`. On Linux, it's `/dev/ttyUSBX`. 
+
+In order to find what port is the right one, you may use Arduino IDE. Please mind that on Linux, you might need to use `sudo` for executing the code. 
