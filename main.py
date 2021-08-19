@@ -3,7 +3,7 @@ import speech_recognition as sr
 import time 
 
 
-valid_commands = ['on', 'off']
+valid_commands = ['on\n', 'off\n']
 target = serial.Serial('/dev/cu.usbmodem142101', 9600)
 
 def write_serial(input_text):
