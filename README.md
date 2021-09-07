@@ -51,7 +51,7 @@ The python script has been written and tested with Python 3.8, and it was fine. 
 In this line:
 
 ```python
-target = serial.Serial('/dev/cu.usbmodem142101', 9600)
+target = serial.Serial('/dev/cu.usbmodem14201', 9600)
 ```
 
 The `/dev/cu.usbemodemXXXXXX` is refering to the _serial port_ I used. This format for external serial connections is used on _Darwin_ operating system (the heart of Apple's macOS). If you have windows, it'll look like `COMX`. On Linux, it's `/dev/ttyUSBX`. 
